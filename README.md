@@ -63,3 +63,36 @@ If it doesn’t, click "Sync Now" in the toolbar.
 
 4. **Run the app:** 
 You can run the app on a connected physical device or an Android emulator.
+
+---
+
+## 📈 Future Improvements & Scalability Notes
+
+As the Currency Converter App evolves, here are some suggestions to improve its functionality, maintainability, and scalability:
+
+### 🧩 Feature Enhancements
+
+- **Favorites & Quick Access:** Allow users to mark frequent currency pairs as favorites for faster conversions.
+- **Offline Support:** Cache the latest conversion rates for offline use and show the last updated time.
+- **Dark Mode Toggle:** Integrate support for dark/light themes using Material You guidelines.
+- **Multi-language Support:** Add localization for key markets (e.g., Spanish, French, etc.) to improve accessibility.
+- **Widget Integration:** Provide a home screen widget to quickly convert currencies without opening the app.
+
+### ⚙️ Technical Improvements
+
+- **Use of Clean Architecture Layers:** Further separate UI, domain, and data layers using interfaces and mappers for better testing and flexibility.
+- **Pagination for History:** If the number of conversions grows, use lazy loading/paging to handle large datasets efficiently.
+- **Testing:** Add more unit tests and UI tests using frameworks like JUnit, Mockito, and Compose Testing.
+- **Modularization:** Split the app into dynamic feature modules (`:home`, `:history`, `:core`, `:detail`, etc.) to improve build performance and code isolation.
+- **Error Handling:** Improve network and database error reporting with user-friendly messages and retry mechanisms.
+
+### 🌐 Scalability Considerations
+
+- **Remote Storage Option:** As the user base grows, support cloud sync (e.g., Firebase, Supabase) so users can access their history across devices.
+- **Analytics & Crash Reporting:** Integrate tools like Firebase Analytics and Crashlytics to monitor user behavior and app stability in production.
+- **Rate Limiting & Caching:** If the external API is used by many users, implement request caching or proxy APIs to reduce dependency and avoid limits.
+- **CI/CD Integration:** Set up automated testing and builds using GitHub Actions or Bitrise for faster and safer deployments.
+
+---
+
+These improvements would prepare the app for long-term growth, enhance user experience, and ensure maintainability as the codebase evolves.
