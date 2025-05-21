@@ -53,3 +53,13 @@ To run this project locally:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/currency-converter-app.git
+
+2. **Open the project in Android Studio Arctic Fox (or newer):**  
+Make sure you have Kotlin and Jetpack Compose support enabled.
+
+3. **Sync Gradle:**  
+Android Studio will usually prompt you to sync Gradle automatically.
+If it doesn’t, click "Sync Now" in the toolbar.
+
+4. **Run the app:** 
+You can run the app on a connected physical device or an Android emulator.
