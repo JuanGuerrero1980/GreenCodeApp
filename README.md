@@ -22,10 +22,34 @@
 - **Hilt** – for dependency injection
 - **Navigation Compose** – for screen navigation
 
+## 🔐 API Reference
+
+This app uses [https://exchangerate.host/](https://api.exchangerate.host/) as its external currency data provider. API key is required.
+
+### Endpoints used:
+
+- `GET /list` – Retrieves a list of available currencies and their descriptions.
+- `GET /convert` – Converts an amount from one currency to another using the most up-to-date exchange rates.
+
+---
+
+## 📦 Architecture
+
+The app follows a clean, modular architecture, structured as follows:
+
+- **data**: API service and Room database implementation (Retrofit + Room)
+- **domain**: Models, UseCases, and repository interfaces
+- **presentation**: UI components using Jetpack Compose and ViewModel
+- **di**: Dependency injection configuration using Hilt
+
+It uses modern Android development best practices: unidirectional data flow, dependency injection, and separation of concerns.
+
+---
+
 ## 🚀 Getting Started
 
 To run this project locally:
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/currency-converter-app.git
